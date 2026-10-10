@@ -1,1 +1,63 @@
-xerqova-panel
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07110c">
+<title>XERQOVA Panel | Gaming Store</title>
+<style>
+:root{--bg:#07110c;--card:#101d16;--green:#18d58a;--lime:#b5ff35;--muted:#a8b7ad;--line:#20372a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at top,#153923 0,#07110c 38rem);color:#f4fff7;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{position:sticky;top:0;z-index:5;background:#07110cf2;border-bottom:1px solid var(--line);padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:900;letter-spacing:.4px;font-size:19px}.brand span{color:var(--lime)}.nav{display:flex;gap:8px}.btn{display:inline-block;border:0;border-radius:12px;padding:11px 14px;font-weight:800;text-decoration:none;cursor:pointer}.btn-primary{background:var(--green);color:#03170d}.btn-ghost{border:1px solid #34523f;color:#e9fff0;background:#102017}
+.hero{padding:34px 18px 22px;max-width:1000px;margin:auto}.eyebrow{color:var(--lime);font-size:12px;font-weight:900;letter-spacing:2px}.hero h1{font-size:clamp(32px,8vw,54px);line-height:1.03;margin:12px 0}.hero h1 span{color:var(--green)}.hero p{color:var(--muted);line-height:1.7;max-width:600px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.trust{display:flex;gap:8px;flex-wrap:wrap;margin-top:22px}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:#d4e7d9;font-size:12px}
+.wrap{max-width:1000px;margin:auto;padding:16px 16px 42px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin:8px 0 16px}.section-head h2{margin:0;font-size:24px}.section-head p{margin:4px 0 0;color:var(--muted);font-size:13px}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.filter{background:#102017;border:1px solid var(--line);color:#eaffef;border-radius:999px;padding:9px 13px;font-weight:700}.filter.active{background:var(--green);color:#04180d;border-color:var(--green)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{overflow:hidden;border:1px solid var(--line);border-radius:18px;background:linear-gradient(160deg,#14251a,#0b150f)}.art{height:130px;display:grid;place-items:center;background:radial-gradient(circle,#254d2b,#101a13 65%);font-size:44px}.product-body{padding:13px}.tag{font-size:10px;font-weight:900;color:var(--lime);letter-spacing:1px}.product h3{font-size:16px;margin:7px 0}.product p{font-size:12px;color:var(--muted);line-height:1.5;min-height:36px}.price{font-size:21px;font-weight:900;margin:10px 0 12px}.price small{font-size:11px;color:var(--muted);font-weight:500}.product .btn{width:100%;text-align:center;padding:10px 8px;font-size:13px}
+.note{margin-top:22px;border:1px solid #31543a;background:#0c1d12;border-radius:15px;padding:14px;color:#c8dccd;font-size:13px;line-height:1.65}.note strong{color:var(--lime)}footer{border-top:1px solid var(--line);padding:22px 16px;text-align:center;color:var(--muted);font-size:12px}footer strong{color:#f4fff7}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.art{height:155px}.hero{padding-top:55px}.product h3{font-size:18px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">XERQOVA <span>PANEL</span></div>
+  <div class="nav"><a class="btn btn-ghost" href="#products">Products</a><a class="btn btn-primary" href="#contact">Contact</a></div>
+</header>
+<section class="hero">
+  <div class="eyebrow">GAMING DIGITAL STORE</div>
+  <h1>LEVEL UP YOUR<br><span>GAMEPLAY.</span></h1>
+  <p>আপনার গেমিং স্টোরে স্বাগতম। নিচে থাকা প্রোডাক্টগুলো দেখুন এবং অর্ডার করতে WhatsApp-এ যোগাযোগ করুন।</p>
+  <div class="hero-actions"><a class="btn btn-primary" href="#products">প্রোডাক্ট দেখুন ↓</a><a class="btn btn-ghost" href="#contact">সাপোর্ট</a></div>
+  <div class="trust"><span class="pill">✓ সহজ অর্ডার</span><span class="pill">✓ কাস্টমার সাপোর্ট</span><span class="pill">✓ মোবাইল-ফ্রেন্ডলি</span></div>
+</section>
+<main class="wrap" id="products">
+  <div class="section-head"><div><h2>Our Products</h2><p>আপনার প্রোডাক্ট ও দাম পরে পরিবর্তন করতে পারবেন</p></div></div>
+  <div class="filters"><button class="filter active" data-filter="all">সব</button><button class="filter" data-filter="nonroot">Non Root</button><button class="filter" data-filter="root">Root Panel</button><button class="filter" data-filter="other">অন্যান্য</button></div>
+  <div class="grid">
+    <article class="product" data-category="nonroot"><div class="art">🎮</div><div class="product-body"><div class="tag">NON ROOT</div><h3>Bala Mod — Non Root</h3><p>এখানে প্রোডাক্টের সঠিক বিবরণ লিখুন।</p><div class="price">৳ 40 <small>/ একবার</small></div><a class="btn btn-primary order" href="#contact" data-product="Bala Mod — Non Root">অর্ডার করুন</a></div></article>
+    <article class="product" data-category="nonroot"><div class="art">⚡</div><div class="product-body"><div class="tag">NON ROOT</div><h3>Drip Proxy — Non Root</h3><p>এখানে প্রোডাক্টের সঠিক বিবরণ লিখুন।</p><div class="price">৳ 60 <small>/ একবার</small></div><a class="btn btn-primary order" href="#contact" data-product="Drip Proxy — Non Root">অর্ডার করুন</a></div></article>
+    <article class="product" data-category="root"><div class="art">🛡️</div><div class="product-body"><div class="tag">ROOT PANEL</div><h3>Root Panel — Demo</h3><p>এই ডেমো নাম ও দাম নিজের মতো বদলান।</p><div class="price">৳ 100 <small>/ একবার</small></div><a class="btn btn-primary order" href="#contact" data-product="Root Panel — Demo">অর্ডার করুন</a></div></article>
+    <article class="product" data-category="other"><div class="art">✨</div><div class="product-body"><div class="tag">SERVICE</div><h3>Setup Service</h3><p>আপনার সাপোর্ট বা সেটআপ সার্ভিসের বিবরণ।</p><div class="price">৳ 50 <small>/ সার্ভিস</small></div><a class="btn btn-primary order" href="#contact" data-product="Setup Service">অর্ডার করুন</a></div></article>
+  </div>
+  <div class="note"><strong>গুরুত্বপূর্ণ:</strong> এগুলো শুধু নমুনা প্রোডাক্ট ও নমুনা দাম। নিজের তথ্য বসান। এই ফ্রি স্টার্টার সাইটে অনলাইন পেমেন্ট, লগইন বা অর্ডার ডেটাবেস নেই; অর্ডার WhatsApp-এ যাবে। গেমের নিয়ম ভাঙে বা অ্যাকাউন্টের নিরাপত্তা ঝুঁকিতে ফেলে এমন টুল বিক্রি করবেন না।</div>
+  <div class="note" id="contact"><strong>অর্ডার / সাপোর্ট</strong><br>WhatsApp নম্বর বসাতে নিচের কোডে YOUR_NUMBER পরিবর্তন করুন। বাংলাদেশের নম্বর লিখবেন country code-সহ, যেমন 8801XXXXXXXXX।<br><a class="btn btn-primary" id="contactBtn" href="#">WhatsApp-এ যোগাযোগ</a></div>
+</main>
+<footer><strong>XERQOVA PANEL</strong><br>© <span id="year"></span> All rights reserved.</footer>
+<script>
+const WHATSAPP_NUMBER = "YOUR_NUMBER"; // এখানে আপনার WhatsApp নম্বর বসান: 8801XXXXXXXXX
+document.getElementById('year').textContent = new Date().getFullYear();
+function waLink(product='') {
+  const message = product ? `Assalamu Alaikum, আমি ${product} সম্পর্কে জানতে ও অর্ডার করতে চাই।` : 'Assalamu Alaikum, আপনার Gaming Store সম্পর্কে জানতে চাই।';
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+document.getElementById('contactBtn').href = waLink();
+document.querySelectorAll('.order').forEach(a => a.href = waLink(a.dataset.product));
+document.querySelectorAll('.filter').forEach(btn => btn.addEventListener('click', () => {
+  document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.product').forEach(card => {
+    card.style.display = btn.dataset.filter === 'all' || card.dataset.category === btn.dataset.filter ? '' : 'none';
+  });
+}));
+</script>
+</body>
+</html>
